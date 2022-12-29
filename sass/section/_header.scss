@@ -1,0 +1,92 @@
+.header {
+    position: relative;
+    z-index: 99;
+    background-image: url("./../img/bg/02.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.header::before {   
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+
+}
+
+.header__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    position: relative;
+    z-index: 9;
+    color:white;
+    padding-bottom: 100px;
+
+}
+
+.header__button {
+    margin-bottom: 140px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__button-search {
+    margin-left: auto;
+}
+
+.header__content {
+    margin-bottom: 148px;
+    text-align: center;
+}
+
+.header__title {
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+}
+
+.header__desc {
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    max-width: 730px;
+
+    p {
+        margin-bottom: 15px;
+    }
+
+}
+
+.header__form {    /*убрали отступы с button и placeholder*/
+    display: flex;
+    justify-content: center;
+}
+
+.header__form .input {
+    margin-right: 20px;
+}
+
+/* или 2 вариант
+.header__form > * + * {
+    margin-right: 20px;
+}*/
+
+.header__scroll {
+    bottom: 100px;
+}

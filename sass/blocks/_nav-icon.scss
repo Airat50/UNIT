@@ -1,0 +1,77 @@
+.nav-icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;    
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    transition:  background-color 0.2s ease-in;
+
+    flex-shrink: 0;
+   
+
+    &:hover {
+        cursor: pointer;
+        background: #00C470;
+
+        .nav-icon__middle,.nav-icon__middle::before, .nav-icon__middle::after {
+            background-color: white;
+        }
+    }
+}
+
+.nav-icon__middle {
+    position: relative;
+    width: 20px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+    
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 20px;
+        height: 3px;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        background-color: black;
+        border-radius: 2px;
+
+    }
+
+    &::before {
+        top: -7px;
+    }
+
+    &::after {
+        top: 7px;
+    }
+}
+
+/* Active state */
+
+.nav-icon.nav-icon--active {
+    position: fixed;
+    z-index: 999;
+}
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+    background-color: transparent;
+
+    &::before, &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

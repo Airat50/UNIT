@@ -1,0 +1,34 @@
+.section-tasks {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 1px solid #E1E1E1;
+}
+.section-tasks__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 114px;
+
+}
+.section-tasks__content {
+    width: 570px;
+}
+.section-tasks__header {
+    margin-bottom: 30px;
+}
+.section-tasks__title {
+    margin-bottom: 30px;
+}
+
+.section-tasks__text {
+    width: 400px;
+    columns: $paragpahColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+}
+
+.section-tasks__text p {
+    margin-bottom: 15px;
+}

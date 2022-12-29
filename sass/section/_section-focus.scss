@@ -1,0 +1,36 @@
+.section-focus {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    overflow-x: hidden;
+}
+
+.section-focus__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.section-focus__content {
+    padding-top: 28px;
+    width: 470px;
+}
+.section-focus__header {
+    margin-bottom: 30px;
+}
+.section-focus__title {
+    margin-bottom: 30px;
+}
+
+
+.section-focus__text {
+    width: 400px;
+    columns: $paragpahColor;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2.14;
+
+    p {
+        margin-bottom: 15px;
+    }
+}
